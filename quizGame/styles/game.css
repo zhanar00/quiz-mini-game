@@ -1,0 +1,79 @@
+.game-inner {
+    /* display: flex;
+    flex-direction: column; */
+    gap: 20px;
+    width: 100%;
+}
+
+#question {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+    grid-column: 1 / -1;
+    cursor: none;
+}
+
+.choice-container {
+    display: flex;
+    background-color: white;
+    margin-bottom: 10px;
+    border: 1px solid darkmagenta;
+    width: 100%;
+    border-radius: 20px;
+    transition: all 0.3s;
+
+}
+
+.choice-container:hover {
+    transform: scale(1.02);
+    background-color: rgba(139, 0, 139, 0.3);
+}
+
+.choice-prefix {
+    padding: 20px;
+    background-color: darkmagenta;
+    color: white;
+    border-radius: 18px 0 0 18px;
+    font-size: 1.5rem;
+}
+
+.choice-text {
+    padding: 20px;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.correct {
+    background-color: rgb(21, 136, 67);
+}
+
+.correct:hover {
+    transform: scale(1.02);
+    border: 1px solid rgb(21, 136, 67);
+    background-color: rgb(21, 136, 67);
+}
+
+.incorrect {
+    background-color: rgb(155, 33, 33);
+}
+
+.incorrect:hover {
+    transform: scale(1.02);
+    border: 1px solid rgb(155, 33, 33);
+    background-color: rgb(155, 33, 33);
+}
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
